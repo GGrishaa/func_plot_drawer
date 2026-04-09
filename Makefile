@@ -5,7 +5,7 @@ LDFLAGS=-lm
 all: graph
 
 graph: graph.o point.o io.o stack.o
-	$(CC) $(LDFLAGS) $^ -o ../build/$@
+	$(CC) $(LDFLAGS) $^ -o $@
 	clear
 
 stack.o: stack.c stack.h
@@ -24,5 +24,4 @@ rebuild: clean all
 
 clean:
 	rm -rf *.o
-	rm -rf ../build/graph
 	clear
