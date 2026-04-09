@@ -23,5 +23,6 @@ graph.o: graph.c point.h
 rebuild: clean all
 
 clean:
-	rm -rf *.o
+	rm -f *.o
+	rm -f graph
 	clear
